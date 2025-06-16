@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yourapp"> <!-- Ganti dengan package kamu jika perlu -->
+
+    <!-- Izin akses internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Food_Recipes"
+        tools:targetApi="31">
+
+        <!-- Activity utama setelah login -->
+        <activity android:name="com.azarcorp.food_recipes.MainActivity" />
+
+        <!-- Activity untuk pendaftaran pengguna -->
+        <activity android:name="com.azarcorp.food_recipes.login.register_activity" />
+
+        <!-- Activity untuk login -->
+        <activity android:name="com.azarcorp.food_recipes.login.login_activity" />
+
+        <!-- Splash screen (sebagai launcher pertama kali) -->
+        <activity
+            android:name="com.azarcorp.food_recipes.login.splash_login"
+            android:exported="true"
+            android:theme="@style/Theme.Food_Recipes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Detail resep (menampilkan isi resep) -->
+        <activity android:name="com.azarcorp.food_recipes.DetailResepActivity" />
+
+        <!-- Halaman profil pengguna -->
+        <activity android:name="com.azarcorp.food_recipes.profile.Profile_Activity" />
+
+        <!-- Halaman resep yang disimpan -->
+        <activity android:name="com.azarcorp.food_recipes.saved.SavedRecipesActivity" />
+
+    </application>
+</manifest>

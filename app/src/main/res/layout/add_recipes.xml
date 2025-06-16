@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9FF">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Nama Pengguna*"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagikan Resep Menarik Kamu!"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Judul Resep -->
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#6DBBC2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Resep"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <EditText
+                        android:id="@+id/et_judul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Masukkan judul resep"
+                        android:maxLength="25"
+                        android:minHeight="48dp" />
+
+                    <!-- Porsi dan Durasi -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="#6DBBC2"> <!-- Warna latar sesuai gambar -->
+
+                        <!-- Porsi -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Porsi"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:gravity="center_vertical" />
+
+                            <EditText
+                                android:id="@+id/et_porsi"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/edit_text_background"
+                                android:hint="2 orang"
+                                android:inputType="text"
+                                android:paddingHorizontal="8dp"
+                                android:textColorHint="#757575" />
+                        </LinearLayout>
+
+                        <!-- Durasi -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Durasi"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:gravity="center_vertical" />
+
+                            <EditText
+                                android:id="@+id/et_durasi"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/edit_text_background"
+                                android:hint="40 menit"
+                                android:paddingHorizontal="8dp"
+                                android:textColorHint="#A0A0A0"
+                                android:inputType="text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- Cerita Asal Resep -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Cerita asal Resep"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <EditText
+                        android:id="@+id/et_cerita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan cerita"
+                        android:background="@drawable/edit_text_background"
+                        android:maxLength="300"
+                        android:minLines="4"
+                        android:gravity="top"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Bahan Utama -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#6DBBC2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bahan Utama"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+
+                    <!-- Daftar bahan -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Bahan 1"
+                        android:maxLength="125"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Bahan 2"
+                        android:maxLength="125"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Bahan 3"
+                        android:maxLength="125"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Bahan 4"
+                        android:maxLength="125"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Bahan 5"
+                        android:maxLength="125"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#0B2C3F"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:text="Tambah Bahan"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Cara Memasak -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#6DBBC2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cara Memasak"
+                        android:textStyle="bold"/>
+
+                    <!-- Langkah-langkah -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Langkah 1"
+                        android:maxLength="125"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Langkah 2"
+                        android:maxLength="125"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Langkah 3"
+                        android:maxLength="125"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Langkah 4"
+                        android:maxLength="125"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Langkah 5"
+                        android:maxLength="125"
+                        android:minHeight="48dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#0B2C3F"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:text="Tambah Bahan"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Upload Foto -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#6DBBC2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto Resep"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max 500kb"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <Button
+                        android:id="@+id/btn_upload_foto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Foto"
+                        android:backgroundTint="#0B2C3F"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btn_upload_resep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Resep"
+                android:backgroundTint="#0B2C3F"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="32dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

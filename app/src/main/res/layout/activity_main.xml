@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70B9BE"
+                app:menu="@menu/top_app_bar_menu"
+                app:subtitleTextColor="#0A2533"
+                app:title="Selamat Datang!"
+                app:titleTextColor="#0A2533" />
+
+            <!-- Rekomendasi -->
+            <TextView
+                android:id="@+id/tv_recommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Rekomendasi"
+                android:textColor="#0A2533"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/item_featured_recipe"
+                tools:itemCount="1"/>
+
+            <!-- Kategori -->
+            <LinearLayout
+                android:id="@+id/category_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kategori"
+                    android:textColor="#0A2533"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="#0A2533"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Horizontal Kategori -->
+            <!-- Horizontal Kategori (Pakai ChipGroup) -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
+                    app:chipSpacing="8dp"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_sarapan"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sarapan"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_selector"
+                        app:strokeColor="@color/chip_stroke_selector"
+                        app:strokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector"
+                        android:checked="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_siang"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Siang"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_selector"
+                        app:strokeColor="@color/chip_stroke_selector"
+                        app:strokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_malam"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malam"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_selector"
+                        app:strokeColor="@color/chip_stroke_selector"
+                        app:strokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_camilan"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camilan"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_selector"
+                        app:strokeColor="@color/chip_stroke_selector"
+                        app:strokeWidth="1dp"
+                        android:textColor="@color/chip_text_selector" />
+
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+
+            <!-- Search -->
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="#D9D9D9"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:hint="Cari resep..."
+                android:padding="10dp"
+                android:inputType="text"
+                android:textColor="#0A2533"
+                android:textColorHint="#555555" />
+
+            <!-- RecyclerView Grid -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_popular_recipe"
+                tools:itemCount="2"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Action Button (selalu di bawah-tengah) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:contentDescription="Tambah"
+        android:src="@drawable/add"
+        android:tint="@android:color/white"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemTextColor="@color/bottom_nav_selector"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemHorizontalTranslationEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

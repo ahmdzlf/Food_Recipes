@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "709778731816",
+    "project_id": "food-recipe-7d6ad",
+    "storage_bucket": "food-recipe-7d6ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709778731816:android:46a7b7c12fe8a2e295161d",
+        "android_client_info": {
+          "package_name": "com.azarcorp.food_recipes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQUW_ybTj748LgZMZt7hrGQ6s6tsqxRbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

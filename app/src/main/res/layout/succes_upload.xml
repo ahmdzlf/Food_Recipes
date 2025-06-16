@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/successLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C2C2"
+    android:padding="24dp">
+
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="341dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/descTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:id="@+id/emojiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🥳"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/successText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Upload Success"
+            android:textColor="#1A2E4F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resep anda sudah terupload"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/cardLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Cek profil -->
+    <TextView
+        android:id="@+id/descSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cek di profile kamu untuk melihat\nresep yang sudah diupload"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/descTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#002E2E"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
