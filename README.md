@@ -44,10 +44,10 @@ Desain UI mengikuti prinsip minimalis dan user-friendly berdasarkan prototipe di
 
 - 🎨 [Desain UI/Ux di Figma](https://www.figma.com/design/U5Xt31iWHtsIlumyWy47Vj/Mobile_Recipes?node-id=64-1760&p=f&t=R4LpldI4Gv3b9DMj-0)
 - ▶️ [Demo YouTube](https://youtu.be/e4Ca13SA-oQ)
-- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/ERhCDkA9/mobile-project))
-- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/HZuh5Tyn/project-mobile))
-- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/xkyXtSbo/project-mobile))
-- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/Ed8bURZo/project-mobile))
+- 📋 [Manajemen Proyek di Trello 1](https://trello.com/b/ERhCDkA9/mobile-project)
+- 📋 [Manajemen Proyek di Trello 2](https://trello.com/b/HZuh5Tyn/project-mobile)
+- 📋 [Manajemen Proyek di Trello 3](https://trello.com/b/xkyXtSbo/project-mobile)
+- 📋 [Manajemen Proyek di Trello 4](https://trello.com/b/Ed8bURZo/project-mobile)
 
 ---
 
