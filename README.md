@@ -40,16 +40,17 @@ Dirancang dengan tampilan modern, dikelola melalui CMS, dan menggunakan Firebase
 
 ## 🧱 Design UI/UX
 <p align="center">
-  <img src="Mobile_Ux/Logs1.png" width="200"/>
-  <img src="Mobile_Ux/login.png" width="200"/>
-  <img src="Mobile_Ux/regis.png" width="200"/>
-  <img src="Mobile_Ux/Home.png" width="200"/>
-  <img src="Mobile_Ux/Favorit.png" width="200"/>
-  <img src="Mobile_Ux/profile.png" width="200"/>
-  <img src="Mobile_Ux/isi resep.png" width="200"/>
-  <img src="Mobile_Ux/upload resep.png" width="200"/>
-  <img src="Mobile_Ux/upload succes.png" width="200"/>
+  <img src="Mobile_Ux/Logs1.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/login.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/regis.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/Home.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/Favorit.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/profile.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/isi resep.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/upload resep.png" width="200" style="vertical-align: top;"/>
+  <img src="Mobile_Ux/upload succes.png" width="200" style="vertical-align: top;"/>
 </p>
+
 
 
 
