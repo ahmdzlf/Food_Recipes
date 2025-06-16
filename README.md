@@ -38,17 +38,9 @@ Dirancang dengan tampilan modern, dikelola melalui CMS, dan menggunakan Firebase
 
 ---
 
-## 🧱 Struktur Proyek
-FoodRecipesApp/
-├── app/
-│ ├── src/
-│ │ ├── main/
-│ │ │ ├── java/ (kode utama)
-│ │ │ ├── res/ (layout XML, drawable, dll)
-│ │ │ └── AndroidManifest.xml
-├── build.gradle
-├── google-services.json
-└── README.md
+## 🧱 Design UI/UX
+<img src="Mobile_Ux/Log1.png" width="300"/>
+
 
 
 ---
