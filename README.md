@@ -30,33 +30,6 @@ Dirancang dengan tampilan modern, dikelola melalui CMS, dan menggunakan Firebase
 
 ---
 
-## 🔗 Link Proyek
-
-- 🎨 [Desain UI di Figma](https://figma.com/link-ke-proyek-figma)
-- 📋 [Manajemen Proyek di Trello](https://trello.com/b/link-proyek)
-- ▶️ [Demo YouTube](https://youtube.com/watch?v=link-demo-video)
-
----
-
-## 🧱 Design UI/UX
-<p align="center">
-  <img src="Mobile_Ux/Logs1.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/login.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/regis.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/Home.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/Favorit.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/profile.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/isi resep.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/upload resep.png" width="200" style="vertical-align: top;"/>
-  <img src="Mobile_Ux/upload succes.png" width="200" style="vertical-align: top;"/>
-</p>
-
-
-
-
-
----
-
 ## 📌 Penjelasan Proyek
 
 Aplikasi ini dirancang untuk memberikan kemudahan kepada pengguna dalam menemukan resep makanan secara cepat dan menarik. 
@@ -67,7 +40,30 @@ Desain UI mengikuti prinsip minimalis dan user-friendly berdasarkan prototipe di
 
 ---
 
-##  UI/UX
+## 🔗 Link Proyek
+
+- 🎨 [Desain UI/Ux di Figma](https://www.figma.com/design/U5Xt31iWHtsIlumyWy47Vj/Mobile_Recipes?node-id=64-1760&p=f&t=R4LpldI4Gv3b9DMj-0)
+- ▶️ [Demo YouTube](https://youtu.be/e4Ca13SA-oQ)
+- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/ERhCDkA9/mobile-project))
+- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/HZuh5Tyn/project-mobile))
+- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/xkyXtSbo/project-mobile))
+- 📋 [Manajemen Proyek di Trello]([https://trello.com/b/link-proyek](https://trello.com/b/Ed8bURZo/project-mobile))
+
+---
+
+## 🧱 Design UI/UX Preview
+
+<p align="center" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px;">
+  <img src="Mobile_Ux/Log1.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/login.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/regis.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/Home.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/Favorit.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/profile.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/isi resep.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/upload resep.png" width="170" style="vertical-align: top; margin-right: 5px;"/>
+  <img src="Mobile_Ux/upload succes.png" width="170" style="vertical-align: top;"/>
+</p>
 
 
 
